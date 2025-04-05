@@ -32,7 +32,7 @@ jobs:
 
     - name: Deploy
       run: |
-        echo ${github_token}&"__"
+        echo ${github_token}
         git config --global user.name $user_name
         git config --global user.email $user_email
         git remote set-url origin https://x-access-token:${github_token}@github.com/${repository}
